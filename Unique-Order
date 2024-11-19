@@ -1,0 +1,11 @@
+def unique_elements(arr):
+    seen=set()
+    unique=[]
+    for num in arr:
+        if num not in seen:
+            seen.add(num)
+            unique.append(num)
+    return unique
+n=int(input())
+arr=list(map(int,input().split()))
+print(" ".join(map(str,unique_elements(arr))))
